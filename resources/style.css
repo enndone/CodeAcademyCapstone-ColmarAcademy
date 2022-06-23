@@ -1,3 +1,53 @@
-.boxContainer {
+* {
+    font-family: Arial;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    display: inline-block;
+}
+
+li {
     display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.navUl {
+    height: 64px;
+    width: 100%;
+    display: inline-flex;
+    margin: 0px 0px 0px 0px;
+    padding-left: 24px;
+}
+
+.headerBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#headerLeft {
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+#headerRight {
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    padding-right: 48px;
+    gap: 16px;
 }
