@@ -1,5 +1,6 @@
 * {
     font-family: Arial;
+    font-weight: bold;
 }
 
 html {
@@ -20,7 +21,7 @@ li {
 
 a {
     text-decoration: none;
-    color: darkslategray;
+    color: darkslategrey;
 }
 
 .navUl {
@@ -38,6 +39,11 @@ a {
     justify-content: center;
 }
 
+.boxContainer {
+    display: flex;
+    width: 100%;
+}
+
 #headerLeft {
     justify-content: flex-start;
     align-items: center;
@@ -50,4 +56,38 @@ a {
     align-content: center;
     padding-right: 48px;
     gap: 16px;
+}
+
+#colmarIcon {
+    height: 40px;
+}
+
+#colmarHeader {
+    color: darkolivegreen;
+    font-size: 32px;
+}
+
+#academyHeader {
+    color: grey;
+    font-size: 32px;
+}
+
+#learnContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+}
+
+#bannerImg {
+    display: flex;
+    padding: 32px 24px;
+    width: 60%;
+}
+
+#learnTextBox {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
