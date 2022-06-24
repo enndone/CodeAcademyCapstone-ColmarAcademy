@@ -4,7 +4,7 @@
 }
 
 html {
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0px;
 }
 
@@ -19,7 +19,7 @@ li {
     align-items: center;
 }
 
-a {
+.headerBox a {
     text-decoration: none;
     color: darkslategrey;
 }
@@ -42,6 +42,7 @@ a {
 .boxContainer {
     display: flex;
     width: 100%;
+
 }
 
 #headerLeft {
@@ -90,4 +91,40 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 5px;
+}
+
+#learnSomething {
+    font-weight: bolder;
+    font-size: 32px;
+    color: darkslategray;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#learnLorem {
+    font-weight: bold;
+    font-size: 24px;
+    color: darkslategray;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#learnStartBox {
+    display: flex;
+    width: 70%;
+    background-color: darkslategrey;
+    justify-content: center;
+    align-items: center;
+}
+
+#learnStart {
+ color: white;
+ padding-top:12px;
+ padding-bottom: 12px;
+ text-decoration: none;
+ font-size: large;
+ font-weight: normal;
 }
