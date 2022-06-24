@@ -1,3 +1,5 @@
+/* General CSS */
+
 * {
     font-family: Arial;
     font-weight: bold;
@@ -18,6 +20,8 @@ li {
     list-style-type: none;
     align-items: center;
 }
+
+/* Header CSS */
 
 .headerBox a {
     text-decoration: none;
@@ -73,6 +77,8 @@ li {
     font-size: 32px;
 }
 
+/* Learn Something (Section 1) CSS */
+
 #learnContainer {
     width: 100%;
     display: flex;
@@ -127,4 +133,71 @@ li {
  text-decoration: none;
  font-size: large;
  font-weight: normal;
+}
+
+/* Practice Section CSS */
+
+.practiceMiniBox {
+    display: flex;
+    flex-direction: row;
+}
+
+#practiceContainer {
+    display: inline-flex;
+    width: 100%;
+}
+
+#practiceImgBox {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    padding: 32px 24px;
+}
+
+#practiceImg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#practiceReadMore {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+#practiceMiniImg {
+    display: flex;
+    padding: 16px 16px;
+    height: auto;
+    width: 35%;
+}
+
+#practiceMiniText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#practiceTitle {
+    padding-bottom: 4px;
+    color: darkslategrey;
+    margin: 0px;
+}
+
+#practiceSubtext {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: normal;
+    color: darkslategray;
+    margin: 0px;
+}
+
+#practiceMiniText a {
+    text-decoration: none;
+    color: lightskyblue;
+    padding-top: 4px;
 }
