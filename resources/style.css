@@ -127,12 +127,12 @@ li {
 }
 
 #learnStart {
- color: white;
- padding-top:12px;
- padding-bottom: 12px;
- text-decoration: none;
- font-size: large;
- font-weight: normal;
+    color: white;
+    padding-top:12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: normal;
 }
 
 /* Practice Section CSS */
@@ -147,12 +147,37 @@ li {
     width: 100%;
 }
 
-#practiceImgBox {
+#practiceMainBox {
     display: flex;
     flex-direction: column;
     width: 60%;
     align-items: center;
     padding: 32px 24px;
+}
+
+#practiceMainTitle{
+    padding-top: 32px;
+    padding-bottom: 24px;
+    font-weight: bolder;
+    color: darkslategray;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#practiceLorem {
+    font-weight: normal;
+    color: darkgray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#practicePerson {
+    color: darkslategrey;
+    font-weight: normal;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
 }
 
 #practiceImg {
@@ -167,6 +192,7 @@ li {
     width: 40%;
     padding-top: 16px;
     padding-bottom: 32px;
+    justify-content: center;
 }
 
 #practiceMiniImg {
@@ -182,7 +208,7 @@ li {
     justify-content: center;
 }
 
-#practiceTitle {
+#practiceMiniTitle {
     padding-bottom: 4px;
     color: darkslategrey;
     margin: 0px;
@@ -201,3 +227,9 @@ li {
     color: lightskyblue;
     padding-top: 4px;
 }
+
+#practiceGuestLecture {
+    background-color: lightgrey;
+}
+
+/* Start Learning CSS */
