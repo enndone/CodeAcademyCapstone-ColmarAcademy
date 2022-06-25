@@ -7,7 +7,11 @@
 
 html {
     margin: 0px 0px 0px 0px;
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
 }
 
 header {
@@ -147,6 +151,31 @@ li {
     width: 100%;
 }
 
+#practiceTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#practiceContainerTitle {
+    display: flex;
+    font-size: 32px;
+    color: darkslategrey;
+    font-weight: bolder;
+}
+
+#practiceContainerText {
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+}
+
+#practiceContainerPerson{
+    font-size: 18;
+    color: darkslategrey;
+    font-weight: normal;
+}
+
 #practiceImgBox {
     display: flex;
     flex-direction: column;
@@ -167,6 +196,10 @@ li {
     width: 40%;
     padding-top: 16px;
     padding-bottom: 32px;
+}
+
+#practiceGuestBox {
+    background-color: lightgrey;
 }
 
 #practiceMiniImg {
@@ -201,3 +234,5 @@ li {
     color: lightskyblue;
     padding-top: 4px;
 }
+
+/* Start Learning Section CSS */
