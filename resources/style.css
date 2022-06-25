@@ -25,6 +25,13 @@ li {
     align-items: center;
 }
 
+/* General ID CSS */
+
+#titleText {
+
+}
+
+
 /* Header CSS */
 
 .headerBox a {
@@ -131,12 +138,12 @@ li {
 }
 
 #learnStart {
- color: white;
- padding-top:12px;
- padding-bottom: 12px;
- text-decoration: none;
- font-size: large;
- font-weight: normal;
+    color: white;
+     padding-top:12px;
+    padding-bottom: 12px;
+     text-decoration: none;
+    font-size: large;
+    font-weight: normal;
 }
 
 /* Practice Section CSS */
@@ -215,13 +222,13 @@ li {
     justify-content: center;
 }
 
-#practiceTitle {
+#practiceMiniTitle {
     padding-bottom: 4px;
     color: darkslategrey;
     margin: 0px;
 }
 
-#practiceSubtext {
+#practiceMiniSubtext {
     padding-top: 4px;
     padding-bottom: 4px;
     font-weight: normal;
@@ -236,3 +243,6 @@ li {
 }
 
 /* Start Learning Section CSS */
+#startLearningContainer {
+    padding: 32px 72px;
+}
