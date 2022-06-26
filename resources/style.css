@@ -26,9 +26,9 @@ li {
     align-items: center;
 }
 
-/* General ID CSS */
+/* General class CSS */
 
-#titleText {
+.titleText {
     font-weight: bolder;
     font-size: 32px;
     color: darkslategray;
@@ -243,7 +243,70 @@ li {
 
 /* Start Learning Section CSS */
 
+.startLearningMiniBox {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.sLMiniTextContainer {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.sLMiniText {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    padding: 16px 16px;
+    width: 100%;
+    height: 200px;
+}
+
 #startLearningContainer {
     display: flex;
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
 }
+
+#startLearningTitle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#startLearningGallery {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+#sLMiniImg {
+    width: 100%;
+    height: auto;
+}
+
+#sLMiniSubtext {
+    color: grey;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Thesis Exibit CSS */
+
