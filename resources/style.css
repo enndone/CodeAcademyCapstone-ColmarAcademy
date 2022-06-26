@@ -222,6 +222,7 @@ li {
 }
 
 #practiceMiniTitle {
+    font-size: 32px;
     padding-bottom: 4px;
     color: darkslategrey;
     margin: 0px;
@@ -293,6 +294,7 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
+    padding-bottom: 32px;
 }
 
 #sLMiniImg {
@@ -310,3 +312,43 @@ li {
 
 /* Thesis Exibit CSS */
 
+#thesisContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#thesisContentContainer {
+    display: inline-flex;
+    width: 100%;
+}
+
+#thesisVideo {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#thesisVideoBox {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 16px 24px 32px 24px;
+}
+
+#thesisVideoText {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#thesisContainerText {
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+}
+
+#fismaBox {
+    background-color: lightgrey;
+}
