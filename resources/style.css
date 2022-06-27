@@ -371,8 +371,8 @@ footer {
 
 /* Mobile CSS */
 
-@media only screen and (max-width: 393px) and (max-height: 851) {
-    #practiceImg {
-        display: none;
+@media only screen and (max-width: 600px) {
+    .navUl {
+      background-color: lightblue;
     }
-}
+  }
