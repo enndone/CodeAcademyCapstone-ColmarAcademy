@@ -354,3 +354,17 @@ li {
 }
 
 /* Footer CSS */
+
+footer {
+    display: inline-block;
+    width: 100%;
+    border-top: 2px solid grey;
+}
+
+.grey{
+    color: grey;
+}
+
+.grey a {
+    color: grey;
+}
