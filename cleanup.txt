@@ -1,0 +1,7 @@
+a few ideas for clean up before moving onto the mobile Section
+
+create more structured classes to help replace duplicate ideas
+
+ie make classes for appropriate containers with the appropriate formatting to allow for less clutter in the style.CSS
+
+ex: class="secContainer inline-flow" || class="miniGallery row wrap"

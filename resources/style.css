@@ -7,7 +7,12 @@
 
 html {
     margin: 0px 0px 0px 0px;
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 header {
@@ -21,6 +26,17 @@ li {
     align-items: center;
 }
 
+/* General class CSS */
+
+.titleText {
+    font-weight: bolder;
+    font-size: 32px;
+    color: darkslategray;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
 /* Header CSS */
 
 .headerBox a {
@@ -33,7 +49,7 @@ li {
     width: 100%;
     display: inline-flex;
     margin: 0px 0px 0px 0px;
-    padding-left: 24px;
+    padding-left: 0px;
 }
 
 .headerBox {
@@ -41,26 +57,28 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .boxContainer {
     display: flex;
     width: 100%;
-
 }
 
 #headerLeft {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    width: 100%;
 }
 
 #headerRight {
     justify-content: flex-end;
     align-items: center;
     align-content: center;
-    padding-right: 48px;
     gap: 16px;
+    width: 100%;
 }
 
 #colmarIcon {
@@ -102,14 +120,6 @@ li {
     padding-left: 5px;
 }
 
-#learnSomething {
-    font-weight: bolder;
-    font-size: 32px;
-    color: darkslategray;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
 #learnLorem {
     font-weight: bold;
     font-size: 24px;
@@ -128,9 +138,9 @@ li {
 
 #learnStart {
     color: white;
-    padding-top:12px;
+     padding-top:12px;
     padding-bottom: 12px;
-    text-decoration: none;
+     text-decoration: none;
     font-size: large;
     font-weight: normal;
 }
@@ -147,37 +157,37 @@ li {
     width: 100%;
 }
 
-#practiceMainBox {
+#practiceTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#practiceContainerTitle {
+    display: flex;
+    font-size: 32px;
+    color: darkslategrey;
+    font-weight: bolder;
+}
+
+#practiceContainerText {
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+}
+
+#practiceContainerPerson{
+    font-size: 18;
+    color: darkslategrey;
+    font-weight: normal;
+}
+
+#practiceImgBox {
     display: flex;
     flex-direction: column;
     width: 60%;
     align-items: center;
     padding: 32px 24px;
-}
-
-#practiceMainTitle{
-    padding-top: 32px;
-    padding-bottom: 24px;
-    font-weight: bolder;
-    color: darkslategray;
-    font-size: 32px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#practiceLorem {
-    font-weight: normal;
-    color: darkgray;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#practicePerson {
-    color: darkslategrey;
-    font-weight: normal;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
 }
 
 #practiceImg {
@@ -192,7 +202,10 @@ li {
     width: 40%;
     padding-top: 16px;
     padding-bottom: 32px;
-    justify-content: center;
+}
+
+#practiceGuestBox {
+    background-color: lightgrey;
 }
 
 #practiceMiniImg {
@@ -209,12 +222,13 @@ li {
 }
 
 #practiceMiniTitle {
+    font-size: 32px;
     padding-bottom: 4px;
     color: darkslategrey;
     margin: 0px;
 }
 
-#practiceSubtext {
+#practiceMiniSubtext {
     padding-top: 4px;
     padding-bottom: 4px;
     font-weight: normal;
@@ -225,12 +239,118 @@ li {
 #practiceMiniText a {
     text-decoration: none;
     color: lightskyblue;
-    padding-top: 12px;
+    padding-top: 4px;
 }
 
-#practiceGuestLecture {
+/* Start Learning Section CSS */
+
+.startLearningMiniBox {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.sLMiniTextContainer {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.sLMiniText {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    padding: 16px 16px;
+    width: 100%;
+    height: 200px;
+}
+
+#startLearningContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: lightgrey;
 }
 
-/* Start Learning CSS */
+#startLearningTitle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
+#startLearningGallery {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 32px;
+}
+
+#sLMiniImg {
+    width: 100%;
+    height: auto;
+}
+
+#sLMiniSubtext {
+    color: grey;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Thesis Exibit CSS */
+
+#thesisContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#thesisContentContainer {
+    display: inline-flex;
+    width: 100%;
+}
+
+#thesisVideo {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#thesisVideoBox {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 16px 24px 32px 24px;
+}
+
+#thesisVideoText {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#thesisContainerText {
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+}
+
+#fismaBox {
+    background-color: lightgrey;
+}
+
+/* Footer CSS */
