@@ -12,7 +12,7 @@
                 <ul class="navUl">
                     <!-- Left side of the Header -->
                     <div class="navBox" id="navLeft">
-                        <li><img src="./resources/ic-logo.svg" id="colmarIcon"></li>
+                        <li><img src="./resources/ic-logo.svg" id="headerIcon"></li>
                         <li><p id="colmarHeader">COLMAR</p></li>
                         <li><p id="academyHeader">ACADEMY</p></li>
                     </div>
@@ -23,6 +23,13 @@
                         <li><a href="#">For Companies</a></li>
                         <li><a href="#">Sign In</a></li>
                     </div>
+                    <!-- Mobile Header -->
+                    <div class="navBox" id="mobileNav">
+                        <li><a href="#"><img src="./resources/ic-logo.svg" id="headerIcon"></a></li>
+                        <li><a href="#"><img src="./resources/ic-on-campus.svg" id="headerIcon"></a></li>
+                        <li><a href="#"><img src="./resources/ic-online.svg" id="headerIcon"></a></li>
+                        <li><a href="#"><img src="./resources/ic-login.svg" id="headerIcon"></a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -31,10 +38,12 @@
             <!-- Learn Something Section (Section 1)-->
             <div class="boxContainer" id="learnContainer">
                 <img src="./resources/banner.jpg" id="bannerImg">
-                <div id="learnTextBox">
-                    <p class="titleText">Learn something<br>new everyday</p>
-                    <p id="learnLorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <div class="boxContainer" id="learnStartBox">
+                <div id="learnTextBoxContainer">
+                    <div id="learnTextBox">
+                        <p class="titleText">Learn something<br>new everyday</p>
+                        <p id="learnLorem">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                    </div>
+                    <div id="learnStartBox">
                         <a href="#" id="learnStart">Start Here</a>
                     </div>
                 </div>
@@ -56,6 +65,7 @@
                 <div id="practiceReadMore">
                     <div class="practiceMiniBox">
                         <img src="./resources/information-orientation.jpg" id="practiceMiniImg">
+                        <img src="./resources/information-orientation-mobile.jpg" id="mobilePracticeImg">
                         <div id="practiceMiniText">
                             <p id="practiceMiniTitle">Orientation date</p>
                             <p id="practiceMiniSubtext">Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -64,14 +74,16 @@
                     </div>
                     <div class="practiceMiniBox">
                         <img src="./resources/information-campus.jpg" id="practiceMiniImg">
+                        <img src="./resources/information-campus-mobile.jpg" id="mobilePracticeImg">
                         <div id="practiceMiniText">
                             <p id="practiceMiniTitle">Our campus</p>
                             <p id="practiceMiniSubtext">Find which campus is close by you</p>
                             <a href="#">Read more</a>
                         </div>
                     </div>
-                    <div class="practiceMiniBox" id="practiceGuestBox">
+                    <div class="practiceMiniBox grey-background">
                         <img src="./resources/information-guest-lecture.jpg" id="practiceMiniImg">
+                        <img src="./resources/information-guest-lecture-mobile.jpg" id="mobilePracticeImg">
                         <div id="practiceMiniText">
                             <p id="practiceMiniTitle">Our guest lecture</p>
                             <p id="practiceMiniSubtext">Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -88,7 +100,7 @@
                         <img src="./resources/course-software.jpg" id="sLMiniImg">
                         <div class="sLMiniTextContainer">
                             <div class="sLMiniText">
-                                <p class="titleText">Software Engineering</p>
+                                <p class="titleText" id="sLTitle">Software Engineering</p>
                                 <p id="sLMiniSubtext">COURSES</p>
                                 <p id="sLMiniSubtext">Web Development, Mobile Development, iOT, APIs</p>
                             </div>
@@ -98,7 +110,7 @@
                         <img src="./resources/course-computer-art.jpg" id="sLMiniImg">
                         <div class="sLMiniTextContainer">
                             <div class="sLMiniText">
-                                <p class="titleText">Computer art</p>
+                                <p class="titleText" id="sLTitle">Computer art</p>
                                 <p id="sLMiniSubtext">COURSES</p>
                                 <p id="sLMiniSubtext">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                             </div>  
@@ -108,7 +120,7 @@
                         <img src="./resources/course-design.jpg" id="sLMiniImg">
                         <div class="sLMiniTextContainer">
                             <div class="sLMiniText">
-                                <p class="titleText">Design</p>
+                                <p class="titleText" id="sLTitle">Design</p>
                                 <p id="sLMiniSubtext">COURSES</p>
                                 <p id="sLMiniSubtext">User Experience Design, User Research, Visual Design</p>
                             </div>  
@@ -118,7 +130,7 @@
                         <img src="./resources/course-data.jpg" id="sLMiniImg">
                         <div class="sLMiniTextContainer">
                             <div class="sLMiniText">
-                                <p class="titleText">Data</p>
+                                <p class="titleText" id="sLTitle">Data</p>
                                 <p id="sLMiniSubtext">COURSES</p>
                                 <p id="sLMiniSubtext">Data Science, Big Data, SQL, Data Visualization</p>
                             </div>  
@@ -128,7 +140,7 @@
                         <img src="./resources/course-business.jpg" id="sLMiniImg">
                         <div class="sLMiniTextContainer">
                             <div class="sLMiniText">
-                                <p class="titleText">Business</p>
+                                <p class="titleText" id="sLTitle">Business</p>
                                 <p id="sLMiniSubtext">COURSES</p>
                                 <p id="sLMiniSubtext">Product Development, Business Development, Startup</p>
                             </div>  
@@ -138,7 +150,7 @@
                         <img src="./resources/course-marketing.jpg" id="sLMiniImg">
                         <div class="sLMiniTextContainer">
                             <div class="sLMiniText">
-                                <p class="titleText">Marketing</p>
+                                <p class="titleText" id="sLTitle">Marketing</p>
                                 <p id="sLMiniSubtext">COURSES</p>
                                 <p id="sLMiniSubtext">Analytics, Content Marketing, Mobile Marketing</p>
                             </div>  
@@ -185,7 +197,7 @@
             <nav>
                 <ul class="navUl">
                     <!-- Left side of the Footer -->
-                    <div class="navBox grey" id="navLeft">
+                    <div class="navBox grey-text" id="navLeft">
                         <li>&copy; 2016 Colmar Academy. All rights reserved</li>
                     </div>
                     <!-- Right side of the Footer -->

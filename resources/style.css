@@ -28,20 +28,21 @@ li {
 
 /* General class CSS */
 
+.boxContainer {
+    display: flex;
+    width: 100%;
+}
+
+.grey-background {
+    background-color: lightgrey;
+}
+
 .titleText {
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 48px;
     color: darkslategray;
     margin-top: 16px;
     margin-bottom: 16px;
-}
-
-
-/* Header CSS */
-
-.navBox a {
-    text-decoration: none;
-    color: darkslategrey;
 }
 
 .navUl {
@@ -61,10 +62,20 @@ li {
     padding-right: 24px;
 }
 
-.boxContainer {
-    display: flex;
-    width: 100%;
+.navBox a {
+    text-decoration: none;
+    color: darkslategrey;
 }
+
+.grey-text{
+    color: grey;
+}
+
+.grey a {
+    color: grey;
+}
+
+/* General ID CSS */
 
 #navLeft {
     justify-content: flex-start;
@@ -81,7 +92,13 @@ li {
     width: 100%;
 }
 
-#colmarIcon {
+/* Header CSS */
+
+#mobileNav {
+    display: none;
+}
+
+#headerIcon {
     height: 40px;
 }
 
@@ -110,19 +127,27 @@ li {
     width: 60%;
 }
 
-#learnTextBox {
+#learnTextBoxContainer{
+    width: 40%;
+    display: flex;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 5px;
+}
+
+#learnTextBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #learnLorem {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 32px;
     color: darkslategray;
     margin-top: 16px;
     margin-bottom: 32px;
@@ -130,7 +155,7 @@ li {
 
 #learnStartBox {
     display: flex;
-    width: 70%;
+    width: 50%;
     background-color: darkslategrey;
     justify-content: center;
     align-items: center;
@@ -138,9 +163,9 @@ li {
 
 #learnStart {
     color: white;
-     padding-top:12px;
+    padding-top:12px;
     padding-bottom: 12px;
-     text-decoration: none;
+    text-decoration: none;
     font-size: large;
     font-weight: normal;
 }
@@ -150,6 +175,7 @@ li {
 .practiceMiniBox {
     display: flex;
     flex-direction: row;
+    border: 1px lightgrey solid;
 }
 
 #practiceContainer {
@@ -202,10 +228,7 @@ li {
     width: 40%;
     padding-top: 16px;
     padding-bottom: 32px;
-}
-
-#practiceGuestBox {
-    background-color: lightgrey;
+    border: 1px lightgrey solid;
 }
 
 #practiceMiniImg {
@@ -213,6 +236,10 @@ li {
     padding: 16px 16px;
     height: auto;
     width: 35%;
+}
+
+#mobilePracticeImg {
+    display: none;
 }
 
 #practiceMiniText {
@@ -297,6 +324,10 @@ li {
     padding-bottom: 32px;
 }
 
+#sLTitle {
+    font-size: 32px;
+}
+
 #sLMiniImg {
     width: 100%;
     height: auto;
@@ -361,18 +392,86 @@ footer {
     border-top: 2px solid grey;
 }
 
-.grey{
-    color: grey;
-}
-
-.grey a {
-    color: grey;
-}
-
 /* Mobile CSS */
 
 @media only screen and (max-width: 600px) {
-    .navUl {
-      background-color: lightblue;
+    #navRight {
+        display: none;
     }
+
+    #navLeft {
+        display: none;
+    }
+
+    #mobileNav {
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    
+    #learnContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bannerImg {
+        display: flex;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+    
+    #learnTextBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #learnStartBox {
+        display: flex;
+        width: 80%;
+        background-color: grey;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #learnTextBoxContainer {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #practiceImgBox {
+        display: none;
+    }
+
+    #practiceReadMore {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 16px 16px 32px 16px;
+        border: none;
+    }
+
+    #mobilePracticeImg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #practiceMiniImg {
+        display: none;
+    }
+
+    .practiceMiniBox {
+        flex-direction: column;
+        border: none;
+    }
+
+    #practiceMiniText {
+        padding: 64px 16px 64px 16px;
+    }
+
   }
