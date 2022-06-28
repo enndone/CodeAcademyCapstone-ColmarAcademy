@@ -341,6 +341,10 @@ li {
     margin-bottom: 8px;
 }
 
+#mobileStartLearningContainer {
+    display: none;
+}
+
 /* Thesis Exibit CSS */
 
 #thesisContainer {
@@ -472,6 +476,39 @@ footer {
 
     #practiceMiniText {
         padding: 64px 16px 64px 16px;
+    }
+
+    .practiceMiniBox.grey-background {
+        background-color: white;
+    }
+
+    #startLearningContainer {
+        display: none;
+    }
+
+    #mSLContainer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mSLGallery {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px 32px 16px;
+    }
+
+    .mSLCourse {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
     }
 
   }
