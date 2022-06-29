@@ -341,7 +341,7 @@ li {
     margin-bottom: 8px;
 }
 
-#mobileStartLearningContainer {
+#mSLContainer {
     display: none;
 }
 
@@ -363,6 +363,60 @@ li {
     display: flex;
     width: 100%;
     height: auto;
+}
+
+#thesisTitle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.thesisMiniBox {
+    display: flex;
+    flex-direction: row;
+    border: 1px lightgrey solid;
+}
+
+#thesisMiniImg {
+    display: flex;
+    padding: 16px 16px;
+    height: auto;
+    width: 35%;
+}
+
+#thesisGallery {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    border: 1px lightgrey solid;
+}
+
+#thesisMiniText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#thesisMiniTitle {
+    font-size: 32px;
+    padding-bottom: 4px;
+    color: darkslategrey;
+    margin: 0px;
+}
+
+#theseMiniSubtext {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: normal;
+    color: darkslategray;
+    margin: 0px;
 }
 
 #thesisVideoBox {
@@ -394,6 +448,25 @@ footer {
     display: inline-block;
     width: 100%;
     border-top: 2px solid grey;
+}
+
+#footerLeft {
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+#footerRight {
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    width: 100%;
+}
+
+#footerMobile {
+    display: none;
 }
 
 /* Mobile CSS */
@@ -486,12 +559,17 @@ footer {
         display: none;
     }
 
+    #startLearningTitle {
+        padding-bottom: 8px;
+    }
+
     #mSLContainer {
         display: flex;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        border-top: 1px lightgrey solid;
     }
 
     .mSLGallery {
@@ -500,15 +578,59 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 8px 16px 32px 16px;
     }
 
     .mSLCourse {
         display: flex;
-        width: 100%;
-        justify-content: center;
         align-items: center;
-        background-color: green;
+        background-color:lightgrey;
+        width: 90%;
+        margin-top: 8px;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+    }
+
+    .mSLCourse p {
+        font-size: 32px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: darkslategray;
+    }
+
+    #thesisGallery {
+        display: none;
+    }
+
+    #thesisVideoText {
+        display: none;
+    }
+
+    #thesisVideoBox {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 24px;
+    }
+
+    footer {
+        border-top: none;
+    }
+
+    #footerLeft {
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    #footerLeft li {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
+    #footerRight {
+        display: none;
     }
 
   }
